@@ -1,0 +1,24 @@
+API_KEYS = {
+    'HYPERLIQUID_API_KEY': '0x12ee188f895f5201bababf82e7c0fbcc5588f9bee5d8f51acfafab7b1b7c16f',
+    'COINGLASS_API_KEY': '00f128ffa1664ddc8ca4ef2eab4ce7c0',
+    'TELEGRAM_BOT_TOKEN': '7685741779:AAGzsPC7hUkTo4gZI9YBj4gdJRNwohV_b-E',
+    'TELEGRAM_CHAT_ID': '7666970416'
+}
+
+BOT_PARAMETERS = {
+    'SYMBOL': 'BTC',
+    'HIGHER_TIMEFRAME': 'H4',
+    'LOWER_TIMEFRAME': 'M15',
+    'CANDLE_LIMIT': 200,
+    'EMA_PERIOD': 200,
+    'ATR_PERIOD': 14,
+    'IMPULSE_THRESHOLD': 1.5,
+    'LOOKBACK_SWING': 20,
+    'SCORE_THRESHOLD': 5,
+    'OI_THRESHOLD': 1500000000,
+    'DOM_LOOKBACK': 10  # Lookback for Orderbook analysis
+}
+
+DATABASE = {
+    'DB_NAME': 'signals.db'
+}
