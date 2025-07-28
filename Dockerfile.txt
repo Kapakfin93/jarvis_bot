@@ -1,0 +1,20 @@
+# Gunakan base image Python yang ringan
+FROM python:3.9-slim-buster
+
+# Atur direktori kerja di dalam kontainer
+WORKDIR /app
+
+# Salin file requirements.txt
+COPY requirements.txt .
+
+# Instal dependensi Python
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Salin semua file bot Anda ke dalam kontainer
+COPY . .
+
+# Buat file database jika belum ada (akan dijalankan saat image dibangun)
+RUN python3 database.py
+
+# Perintah untuk menjalankan bot Anda
+CMD ["python3", "jarvis_bot.py"]
